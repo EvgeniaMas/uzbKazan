@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+ <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "format-detection" content = "telephone=no" />
+    <title>Чугунные казаны и посуды из фарфора ручной работы от производителей</title>
+    <meta name="description" content="Восточная посуда из Узбекистана" >
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />   
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />  
+</head>
+<body class="gradient">
+<header>
+<nav class="navbar navbar-default text-uppercase">
+      <div class="container shops">
+        <div class="top_navigation">
+         <button onclick="PopUpShow()" class="header__backcall">Заказать звонок</button>
+            <a href="cart.html">
+            <img class="cart_image" src="images/cart.png" alt="Корзина"/>
+            <p class="products_quantity"> </p>
+            </a>
+        </div>
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#"><img class="header__logo" src="logo.png"></a>
+        <!-- MOBILE MENU -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- DESKTOP MENU -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Главная</a></li>       
+            <li><a href="products.html">Каталог товаров</a></li>
+            <li><a href="pay.html">Оплата</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+</header>
+<div id="blindLayer" class="container-fluid"></div>
+<div class="container">
+  <p class="section__title white">Каталог товаров </p>
+   <div class="row"> 
+   <div class="col-md-12">
+     <div class="col-md-3">
+      <div class="catalog__section">
+       <a href="kazan.html"><img class="catalog__image" src="images/category/1.png" alt="Каталог товаров"></a>
+       <p class="category__title">Казаны чугунные узбекские</p>
+     </div>
+     </div>
+     <div class="col-md-3">
+       <div class="catalog__section">
+       <a href="stoves.html"><img class="catalog__image" src="images/category/2.png" alt="Каталог товаров"></a>
+       <p class="category__title">Печи, очаги и подставки для казанов</p>
+     </div>
+   </div>
+     <div class="col-md-3">
+       <div class="catalog__section">
+       <a href="complect.html"><img class="catalog__image" src="images/category/3.png" alt="Каталог товаров"></a>
+       <p class="category__title">Комплект: Казан + Печь</p>       
+     </div>
+   </div>
+     <div class="col-md-3">
+       <div class="catalog__section">
+       <a href="mangal.html"><img class="catalog__image" src="images/category/4.png" alt="Каталог товаров"></a>
+       <p class="category__title">Мангалы</p>
+     </div>
+   </div>
+   </div>
+ </div>
+    <div class="row"> 
+   <div class="col-md-12">
+     <div class="col-md-3">
+       <div class="catalog__section">>
+       <a href="shumovki.html"><img class="catalog__image" src="images/category/5.png" alt="Каталог товаров"></a>
+       <p class="category__title">Шумовки и аксессуары</p>
+     </div>
+   </div>
+     <div class="col-md-3">
+       <div class="catalog__section">
+       <a href="dishes.html"><img class="catalog__image" src="images/category/6.png" alt="Каталог товаров"></a>
+       <p class="category__title">Посуда из Узбекистана</p>
+     </div>
+   </div>
+     <div class="col-md-3">
+       <div class="catalog__section">
+       <a href="knives.html"><img class="catalog__image" src="images/category/7.png" alt="Каталог товаров"></a>
+       <p class="category__title">Узбекские Ножи</p>       
+     </div>
+     </div>     
+   </div>
+ </div>
+</div>
+</div>
+<footer class="site-footer">
+    <div class="row">
+        <div class="footer-text__about">
+            2018 © Интернет-магазин UZBKAZAN
+         </div>         
+    </div>                        
+</footer>
+
+<!-- Попап заказа обратного звонка  и прайс-листа-->
+ <div id="popup1" class= "popup" >
+  <a href="javascript:PopUpHide()">
+  <p  class="close1" style="float:right">X</p> </a>
+  <form id="back_call_popup" method="POST" action="send.php">
+    <h2 class="form__order">Заполните форму </h2>
+    <div class="input-bloc w1">
+        <label for="name">Имя</label>
+        <input  type="text" name="name"  required="required"  />       
+     </div>          
+     <div class="input-bloc w1">
+        <label for="phone">Телефон</label>
+        <input  type="tel" name="phone"  required="required"  />       
+     </div>
+      <button href="thanks.html" type="submit" id="send"  class="header__button">Заказать </button>  
+  </form>
+</div>
+
+<div id="popup2" class= "popup"> 
+    <form>
+    <div>        
+         <a  class="header__button" href="cart.html">ОФОРМИТЬ ЗАКАЗ</a>
+         <button  class=" header__button" onclick="PopUpTwoHide()">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+    </div>    
+  </form>
+</div>
+<!-- Подключение jqery --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>     
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/carts1.js"></script>
+</body>
+</html>
+
+
+

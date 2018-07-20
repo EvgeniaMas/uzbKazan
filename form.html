@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+ <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "format-detection" content = "telephone=no" />
+    <title>Восточная посуда из Узбекистана</title>
+    <meta name="description" content="Восточная посуда из Узбекистана" >
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />   
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
+    <style>
+      body{
+       height: 100%;
+       background-image: url(images/gradient.png);
+       background-repeat: repeat;
+       background-position: center;
+       background-size:100%;
+      
+  } 
+</style>
+</head>
+<body>
+<div class="container">
+<a class="form__links" href="index.html">Вернуться на главную страницу</a>
+<a class="form__links" href="products.html">Вернуться в каталог</a>
+<div id="feedback-box">
+  
+   <form class="modals_form" id="feedback-form" method="POST" action="order.php">
+    <h2 class="form__order">Заполните форму </h2>    
+     <div class="input-bloc w1">
+        <label for="name">Имя</label>
+        <input type="text" name="name" required="required" />
+      </div>
+    
+     <div class="input-bloc w1">
+        <label for="phone">Телефон</label>
+        <input  type="tel" name="phone"  required="required"  />
+        <div class="error-box"></div> 
+     </div>
+      <div class="input-bloc w1">
+      <!--   <label for="name">Товар</label> -->
+        <input id="cart_total" type="hidden" name="cart" value="" />
+      </div>      
+        <button href="thanks.html" type="submit" id="send"  class="header__button">ЗАКАЗАТЬ</button>           
+    </form>
+</div>
+</div>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+<script src="js/form.js"></script>
+ 
+ </body>
+</html>
+
+
+
