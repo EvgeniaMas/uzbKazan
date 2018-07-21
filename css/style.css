@@ -215,11 +215,34 @@ cursor: default;
 }
 
 button.header__backcall {
-background-color: transparent;
 color:#fff;
 float: right;
 border:none;
+box-shadow: inset 0 0 0 2px #111;
+background-color:  #da7701;
+border-radius: 8px;
+transition: .4s;
+display: block;
+margin:auto;
+width: 86%;
+max-width: 120px;
+text-align: center;
+min-height: 2.5rem;
+line-height: 2.5rem;
+margin-top: 5px;
+margin-bottom: 1rem;
 }
+
+button.header__backcall:hover
+{
+color: #fff;
+background-color: #a42102;
+opacity: 1;
+}
+
+
+
+
 
 
 .cart_image {
@@ -1266,8 +1289,17 @@ font-size: 2.2rem;
 color: #fff;
 font-family: "Open Sans Bold";
 width: 90%;
-
 }
+
+.popup {
+     margin-left: -150px;    
+    top: 2rem;
+    width: 300px;
+    
+}
+
+
+
 
 .section__title {
 font-size: 1.5rem;
