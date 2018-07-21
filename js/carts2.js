@@ -3,7 +3,7 @@ class ProductCart {
     this.products = JSON.parse(localStorage.getItem('PRODUCTS'));
     if(!this.products) {
      document.getElementById('cart').innerHTML = '<h3 class="empty_cart">Ваша корзина пуста!</h3> <br>\
-      <a class="back_to_shop_link" href="index.html">Вернуться в магазин </a>'; 
+      <a class="back_to_shop_link" href="products.html">Вернуться в каталог </a>'; 
      $('#clear_button').hide();
      $('.total_sum').hide(); 
      $('#goTo_Form').hide();      

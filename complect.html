@@ -11,7 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />  
 </head>
-<body>
+<body class="gradient">
 <header>
 <nav class="navbar navbar-default text-uppercase">
       <div class="container shops">
@@ -39,7 +39,7 @@
             <li><a href="products.html">Каталог товаров</a></li>
             <li><a href="pay.html">Оплата</a></li>
             <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -295,6 +295,7 @@
                 <button class="add_to_cart btn order_product">Купить</button>
             </div>
           </div>
+        </div>
 
       <div class="  products">
         <div class="good">
@@ -308,6 +309,7 @@
                 <button class="add_to_cart btn order_product">Купить</button>
             </div>
           </div>
+         </div>
 
         <div class="products">
         <div class="good">
@@ -322,6 +324,7 @@
                 <button class="add_to_cart btn order_product">Купить</button>
             </div>
           </div>
+         </div>
 
           <div class="products">
         <div class="good">
@@ -336,6 +339,7 @@
                 <button class="add_to_cart btn order_product">Купить</button>
             </div>
           </div>
+         </div>
 
 
       </div>
@@ -367,14 +371,14 @@
         <label for="phone">Телефон</label>
         <input  type="tel" name="phone"  required="required"  />       
      </div>
-      <button href="thanks.html" type="submit" id="send"  class="header__button">Заказать </button>  
+      <button type="submit" id="send"  class="header__button">Заказать </button>  
   </form>
 </div>
-
 <div id="popup2" class= "popup"> 
     <form>
-    <div>        
-         <a  class="header__button" href="cart.html">ОФОРМИТЬ ЗАКАЗ</a>
+    <div>  
+     <h2 class="form__order">Выберите действие</h2>      
+         <a  class="header__button" href="cart.html">ПЕРЕЙТИ В КОРЗИНУ</a>
          <button  class=" header__button" onclick="PopUpTwoHide()">ПРОДОЛЖИТЬ ПОКУПКИ</button>
     </div>    
   </form>
